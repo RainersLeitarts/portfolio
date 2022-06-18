@@ -1,0 +1,25 @@
+.skill-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.skill-icon{
+    height: 30px;
+}
+
+.skill-text{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.active{
+    transform: scale(1.08);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}

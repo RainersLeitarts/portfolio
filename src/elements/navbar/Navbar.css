@@ -1,0 +1,30 @@
+.nav-wrapper{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+    background-color: rgb(236, 236, 236);
+}
+
+.links-container{
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link{
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+
+    text-shadow: 0 0px 10px #d6d6d6;
+}
