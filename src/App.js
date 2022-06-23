@@ -8,12 +8,14 @@ import {
 import Home from './pages/Home/Home';
 import Skills from './pages/Skills/Skills';
 import Portfolio from './pages/Portfolio/Portfolio';
+import PageWrapper from './elements/PageWrapper/PageWrapper';
 
 function App() {
   return (
     <BrowserRouter>
       
       <Navbar />
+      <PageWrapper></PageWrapper>
       <Home />
       <Skills />
       <Portfolio />
