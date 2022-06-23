@@ -15,20 +15,19 @@
 }
 
 .skills-col1{
-    width: 50%;
+    width: 45%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .skills-col2{
-    width: 50%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-right: 65px;
+    justify-content: flex-end;
+    
     padding-bottom: 10px;
 }
 
@@ -56,5 +55,5 @@
 }
 
 .skill-img{
-    height: 23vw;
+    height: 450px;
 }
