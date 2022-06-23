@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "Recipes sharing platform with authentication",
-            "description": "This project was made using ReactJS for the front-end work, and Firebase for the data storage. This project includes full CRUD functionality using the REST API provided by firebase. It is using Google for authentication. I had a lot of fun creating this project and it was a great learning experience."
+            "description": "Made using ReactJS for the front-end and Firebase for the data storage. This project includes full CRUD functionality using the REST API provided by firebase. It is using Google for authentication."
         }
     ]
 }

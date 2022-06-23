@@ -1,3 +1,10 @@
+.page-wrapper-outer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .page-wrapper{
-    
+    max-width: 1600px;
+    height: 100%;
 }

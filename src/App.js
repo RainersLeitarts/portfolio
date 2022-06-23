@@ -13,12 +13,13 @@ import PageWrapper from './elements/PageWrapper/PageWrapper';
 function App() {
   return (
     <BrowserRouter>
-      
+
       <Navbar />
-      <PageWrapper></PageWrapper>
-      <Home />
-      <Skills />
-      <Portfolio />
+      <PageWrapper>
+        <Home />
+        <Skills />
+        <Portfolio />
+      </PageWrapper>
       <Routes>
 
       </Routes>
