@@ -13,6 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .portfolio-content{
@@ -22,6 +23,8 @@
 }
 
 .portfolio-header{
+    position: absolute;
+    top: 10%;
     margin: 0;
     padding: 0;
     font-size: 36px;

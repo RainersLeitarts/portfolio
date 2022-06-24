@@ -28,3 +28,9 @@
 
     text-shadow: 0 0px 10px #d6d6d6;
 }
+
+@media screen and (max-width: 690px) {
+    .links-container{
+        display: none;
+    }
+}

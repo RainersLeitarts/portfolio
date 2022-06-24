@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectCard from '../../elements/ProjectCard/ProjectCard'
 import './Portfolio.css'
 import cookbookImg from '../../Images/cookbook.png'
+import carrentImg from '../../Images/carrent.png'
 import projects from './PortfolioData.json'
 
 const Portfolio = () => {
@@ -15,8 +16,7 @@ const Portfolio = () => {
         <div className='portfolio-content'>
 
           <ProjectCard img={cookbookImg} title={projects.projects[0].title} description={projects.projects[0].description} />
-          <ProjectCard img={cookbookImg} title={projects.projects[0].title} description={projects.projects[0].description} />
-          <ProjectCard />
+          <ProjectCard img={carrentImg} title={projects.projects[1].title} description={projects.projects[1].description} />
         </div>
       </div>
     </div>
