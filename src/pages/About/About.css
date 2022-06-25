@@ -2,7 +2,6 @@
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
-    background-color: aqua;
 }
 
 .about-col1{
@@ -10,21 +9,18 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background-color:bisque;
 }
 
 .about-col2{
     width: 40%;
     height: 100%;
     display: flex;
-    background-color:blueviolet;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .about-content-wrapper{
     width: 100%;
-    background-color: brown;
     margin-bottom: 100px;
 }
 
@@ -38,20 +34,71 @@
     font-size: 20px;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
     margin: 10px 0;
 }
 
+.highlight-container{
+    position: relative;
+    z-index: 1;
+}
+
 .about-highlight{
-    color: red;
+    font-weight: 500;
+    position: relative;
     cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.about-highlight::before{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    right: 0;
+    content: '';
+    height: 3px;
+    border-radius: 3px;
+    background-color: black;
+    transition: all 0.2s ease-out;
+    z-index: -1;
+}
+
+.about-highlight::after{
+    color: white;
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 100%;
+    content: '';
+    transition: all 0.2s ease-out;
+    background-color: black;
+    border-radius: 3px;
+    z-index: -1;
+}
+
+.about-highlight:hover{
+    color: white;
+}
+
+.about-highlight:hover::after{
+    transition: all 0.2s ease-out;
+    right: 0;
+    padding-right: 10px;
+}
+
+.about-highlight:hover::before{
+    transition: all 0.2s ease-out;
+    top: 0;
+    height: 100%;
 }
 
 .about-socials-container{
-    height: 40px;
-    width: 50%;
-    background-color: aqua;
+    height: 23px;
+    width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-start;
+    align-items: baseline;
 }
 
 .about-socials-item{
@@ -62,13 +109,123 @@
 }
 
 #about-img{
-    height: 450px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
     margin-bottom: 100px;
+}
+
+.about-socials-container > img{
+    height: 100%;
+    width: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.about-socials-container > span{
+    font-size: 20px;
+    margin-right: 20px;
+    
 }
 
 
 @media screen and (max-width: 1400px) {
     .about-wrapper{
         padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:auto 0;
+    }
+
+    .about-content-wrapper{
+        margin-bottom: 0;
+    }
+
+    .about-col1{
+        height: 40vh;
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .about-col2{
+        height: 40vh;
+        width: 100%;
+        padding-bottom: 0;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    #about-img{
+        max-height: 90%;
+        width: auto;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .about-title{
+        margin: 0;
+        padding: 0;
+        font-size: 52px;
+    }
+    
+    .about-text{
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-col1{
+        height: 50vh;
+        align-items: flex-start;
+        justify-content: flex-end;
+        
+    }
+
+    .about-content-wrapper{
+        margin-top: auto;
+    }
+
+    .about-col2{
+        height: 30vh;
+        width: 100%;
+        padding-bottom: 0;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    #about-img{
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    @media screen and (max-height: 760px) {
+        .about-wrapper{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-col1{
+            height: 100vh;
+            align-items: center;
+        }
+
+        .about-content-wrapper{
+            margin-top: 0;
+        }
+
+        .about-col2{
+            display: none;
+        }
     }
 }
