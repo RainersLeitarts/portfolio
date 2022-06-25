@@ -17,9 +17,6 @@ const Skills = () => {
 
     return (
         <div className='skills-wrapper'>
-            <div className='skills-col1'>
-                <img className='skill-img' src={selectedImg} />
-            </div>
             <div className='skills-col2'>
                 <div className='skills-content-wrapper'>
                     <h1 className='skills-header'>My Favourite tools for design and development</h1>
@@ -36,6 +33,11 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
+
+            <div className='skills-col1'>
+                <img className='skill-img' src={selectedImg} />
+            </div>
+            
         </div>
     )
 }

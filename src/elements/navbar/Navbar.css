@@ -29,8 +29,24 @@
     text-shadow: 0 0px 10px #d6d6d6;
 }
 
-@media screen and (max-width: 690px) {
-    .links-container{
+.hamburger-icon{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    margin-right: 5%;
+}
+
+@media screen and (max-width: 772px) {
+    .nav-link{
         display: none;
+    }
+
+    .links-container{
+        justify-content: flex-end;
+    }
+
+    .hamburger-icon{
+        display:initial;
     }
 }

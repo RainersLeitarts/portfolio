@@ -19,6 +19,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .skills-col2{
@@ -26,7 +27,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     
     padding-bottom: 10px;
 }
@@ -56,4 +57,41 @@
 
 .skill-img{
     height: 450px;
+}
+
+@media screen and (max-width: 1400px) {
+    .home-wrapper{
+        padding: 0 50px;
+    }
+
+    .left-col{
+        padding-bottom: 100px;
+    }
+
+    .right-col{
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .home-wrapper{
+        display: block;
+        margin-top: 5vh;
+    }
+
+    .left-col{
+        height: 40vh;
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .right-col{
+        height: 40vh;
+        width: 100%;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+   
 }

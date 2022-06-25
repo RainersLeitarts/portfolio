@@ -2,15 +2,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    min-width: none;
 }
 
 .page-wrapper{
-    max-width: 1300px;
-    height: 100%;
+    width: clamp(250px, 100%, 1300px);
 }
 
-@media screen and (max-width: 1350px) {
-    .page-wrapper{
-        max-width: 1200px;
-    }
-}

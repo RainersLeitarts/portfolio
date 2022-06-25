@@ -11,7 +11,7 @@ const Portfolio = () => {
   return (
     <div className='portfolio-wrapper'>
       <div className='portfolio-content-wrapper'>
-        <h1 className='portfolio-header'>Some of my  favourite latest projects</h1>
+        <h1 className='portfolio-header'>Some of the projects I've worked on</h1>
 
         <div className='portfolio-content'>
 
