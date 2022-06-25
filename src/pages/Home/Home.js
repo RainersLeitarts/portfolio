@@ -12,7 +12,7 @@ const Home = () => {
         </div>
       </div>
       <div className='right-col'>
-        <img id='home-img' src={home_img} alt={'test'} />
+        <img id='home-img' src={home_img} alt={'home_img'} />
       </div>
     </div>
   )
