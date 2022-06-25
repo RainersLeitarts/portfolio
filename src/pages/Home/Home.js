@@ -4,7 +4,7 @@ import home_img from '../../Images/1.png'
 
 const Home = () => {
   return (
-    <div className='home-wrapper'>
+    <div className='home-wrapper' id='home'>
       <div className='left-col'>
         <div className='home-content' >
           <h1 className='home-h1'>Hello, I am Rainers</h1>

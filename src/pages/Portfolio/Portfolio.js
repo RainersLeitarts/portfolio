@@ -9,7 +9,7 @@ const Portfolio = () => {
   console.log(projects.projects[0].title)
 
   return (
-    <div className='portfolio-wrapper'>
+    <div className='portfolio-wrapper' id='portfolio'>
       <div className='portfolio-content-wrapper'>
         <h1 className='portfolio-header'>My projects:</h1>
         <div className='portfolio-content'>

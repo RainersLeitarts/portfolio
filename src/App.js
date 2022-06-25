@@ -12,20 +12,15 @@ import PageWrapper from './elements/PageWrapper/PageWrapper';
 import About from './pages/About/About';
 
 function App() {
-  return (
-    <BrowserRouter>
-
-      <Navbar />
-      <PageWrapper>
-        <Home />
-        <About />
-        <Skills />
-        <Portfolio />
-      </PageWrapper>
-      <Routes>
-
-      </Routes>
-    </BrowserRouter>
+  return (<>
+    <Navbar />
+    <PageWrapper>
+      <Home />
+      <About />
+      <Skills />
+      <Portfolio />
+    </PageWrapper>
+  </>
   );
 }
 

@@ -1,5 +1,5 @@
 .portfolio-wrapper{
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,10 +36,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    .portfolio-wrapper{
-        height: auto;
-    }
-
     .portfolio-header{
         font-size: 44px;
     }
