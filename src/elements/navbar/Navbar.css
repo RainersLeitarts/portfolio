@@ -17,6 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    margin-top: 0px;
 }
 
 .nav-link{
@@ -96,7 +98,7 @@
 .mobile-nav{
     z-index: 998;
     position: absolute;
-    top: 0;
+    top: -30px;
     right: 0;
     left: 0;
     height: 100vh;
@@ -108,15 +110,11 @@
     justify-content: center;
     align-items: center;
 
-    display: none;
 }
 
 .mobile-nav.open{
     transition: all 0.3 ease-out;
-    right: 0;
     transform: translate(0);
-
-    display: flex;
 }
 
 .mobile-nav-link{
@@ -144,6 +142,6 @@
     }
 
     .nav-wrapper{
-        border-bottom: 1px solid rgb(0, 0, 0);
+        border-bottom: 1px solid rgba(0, 0, 0);
     }
 }

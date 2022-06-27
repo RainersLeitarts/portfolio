@@ -13,8 +13,8 @@ const Portfolio = () => {
       <div className='portfolio-content-wrapper'>
         <h1 className='portfolio-header'>My projects:</h1>
         <div className='portfolio-content'>
-          <ProjectCard img={cookbookImg} title={projects.projects[0].title} description={projects.projects[0].description} />
-          <ProjectCard img={carrentImg} title={projects.projects[1].title} description={projects.projects[1].description} />
+          <ProjectCard demo={projects.projects[0].demo} github={projects.projects[0].github} img={cookbookImg} title={projects.projects[0].title} description={projects.projects[0].description} />
+          <ProjectCard demo={projects.projects[1].demo} github={projects.projects[1].github} img={carrentImg} title={projects.projects[1].title} description={projects.projects[1].description} />
         </div>
       </div>
     </div>

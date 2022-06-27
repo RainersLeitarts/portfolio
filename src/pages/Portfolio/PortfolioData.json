@@ -2,11 +2,15 @@
     "projects": [
         {
             "title": "Recipes sharing platform with authentication",
-            "description": "Made using ReactJS for the front-end and Firebase for the data storage. This project includes full CRUD functionality using the REST API provided by firebase. It is using Google for authentication."
+            "description": "Made using ReactJS for the front-end and Firebase for the data storage. This project includes full CRUD functionality using the REST API provided by firebase. It is using Google for authentication.",
+            "demo" : "https://cookbook-agile-rewidle.herokuapp.com/",
+            "github" : "https://github.com/RainersLeitarts/cook-book-agile-rainers"
         },
         {
             "title": "Car rental platform",
-            "description": "Made with he MERN stack. Features an admin and a customer roles. Administrators can add cars and manage reservations, which users can simply make. The app is not yet completely done, more features incoming!"
+            "description": "Made with he MERN stack. Features an admin and a customer roles. Administrators can add cars and manage reservations, which users can simply make. The app is not yet completely done, more features incoming!",
+            "demo" : "https://carrentmern.netlify.app/",
+            "github" : "https://github.com/RainersLeitarts/car-rental-mern"
         }
     ]
 }
