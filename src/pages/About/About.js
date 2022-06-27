@@ -10,11 +10,23 @@ const About = () => {
             <div className='about-col1'>
                 <div className='about-content-wrapper'>
                     <h1 className='about-title'>About Me:</h1>
-                    <p className='about-text'>My name is Rainers Leitarts and I am a 19 year old Full-stack web developer based in Latvia. I like looking for new problems and solving them, that is my passion. That is why coding has alway been fascinating to me. And since I have a pretty strong creative side, I figured that Web-development suits me. So I began my Web development journey. I picked up some Web development tools and I certainly do have <span className='highlight-container'><span className='about-highlight'>favourites</span></span>. I have worked on a couple of <span className='highlight-container'><span className='about-highlight'>projects</span></span>, from all of which I learned a lot.</p>
+                    <p className='about-text'>My name is Rainers Leitarts and I am a 19 year old Full-stack web 
+                    developer based in Latvia. I like looking for new problems and solving them, that is my passion. 
+                    That is why coding has alway been fascinating to me. And since I have a pretty strong creative side, 
+                    I figured that Web-development suits me. So I began my Web development journey. I picked up some 
+                    Web development tools and I certainly do have 
+                    <span className='highlight-container'><span className='about-highlight'>favourites</span></span>. 
+                    I have worked on a couple of 
+                    <span className='highlight-container'><span className='about-highlight'>projects</span></span>
+                    , from all of which I learned a lot.</p>
                     <div className='about-socials-container'>
                         <span>Find me on: </span>
-                        <img src={linkedin_img} />
-                        <img src={github_img} />
+                        <a href='https://www.linkedin.com/in/rainers-leitarts/' target='_blank'>
+                            <img className='about-socials-icon' src={linkedin_img} />
+                        </a>
+                        <a href='https://github.com/RainersLeitarts' target='_blank'>
+                            <img className='about-socials-icon' src={github_img} />
+                        </a>
                     </div>
                 </div>
             </div>

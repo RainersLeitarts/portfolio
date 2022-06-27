@@ -115,7 +115,11 @@
     margin-bottom: 100px;
 }
 
-.about-socials-container > img{
+.about-socials-container > a{
+    height: 100%;
+}
+
+.about-socials-icon{
     height: 100%;
     width: auto;
     margin-right: 20px;

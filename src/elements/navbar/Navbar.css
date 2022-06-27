@@ -29,12 +29,101 @@
     text-shadow: 0 0px 10px #d6d6d6;
 }
 
-.hamburger-icon{
+
+
+.nav-active{
+    text-decoration: underline;
+}
+
+.hamburger-container{
     display: none;
     width: 40px;
     height: 40px;
-    background-color: black;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
     margin-right: 5%;
+    z-index: 999;
+}
+
+.hamburger{
+    display: none;
+    width: 30px;
+    height: 4px;
+    background: black;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.hamburger.open{
+    transform: translateX(-30px); 
+    background: transparent;
+}
+
+.hamburger::before, .hamburger::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: black;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger::before{
+    background: black;
+    transform: translateY(-11px);
+}
+
+.hamburger.open::before{
+    transform: rotate(45deg) translate(21px, -21px); 
+    background-color: rgb(236, 236, 236);
+}
+
+
+.hamburger::after{
+    background: black;
+    transform: translateY(11px);
+}
+
+.hamburger.open::after{
+    transform: rotate(-45deg) translate(21px, 21px); 
+    background-color: rgb(236, 236, 236);
+}
+
+.mobile-nav{
+    z-index: 998;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #231f20;
+    transition: all 0.3s ease-in-out;
+    transform: translate(100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.mobile-nav.open{
+    transition: all 0.3 ease-out;
+    right: 0;
+    transform: translate(0);
+
+    display: flex;
+}
+
+.mobile-nav-link{
+    color: rgb(236, 236, 236);
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 772px) {
@@ -46,11 +135,15 @@
         justify-content: flex-end;
     }
 
-    .hamburger-icon{
-        display:initial;
+    .hamburger-container{
+        display: flex;
     }
-}
 
-.nav-active{
-    text-decoration: underline;
+    .hamburger{
+        display: block;
+    }
+
+    .nav-wrapper{
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
 }
