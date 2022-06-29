@@ -38,10 +38,12 @@ const Navbar = () => {
 
   return (
     <div style={{ borderBottom: `1px solid rgba(0, 0, 0, ${scroll})` }} className='nav-wrapper'>
+      <p className='mobile-logo' >RewoDev</p>
       <div className='links-container'>
         <div onClick={openHandler} className='hamburger-container'>
           <div className={`hamburger ${open ? 'open' : ''}`} />
         </div>
+        
         <div onClick={closeHandler} className={`mobile-nav ${open ? 'open' : ''}`}>
           <Link onClick={closeHandler} className='mobile-nav-link' activeClass="nav-active" spy={true} to="home" smooth={'easeInOutQuart'} offset={-101} duration={500} >HOME</Link>
           <Link onClick={closeHandler} className='mobile-nav-link' activeClass="nav-active" spy={true} to="about" smooth={'easeInOutQuart'} offset={-100} duration={500} >ABOUT</Link>
@@ -49,10 +51,13 @@ const Navbar = () => {
           <Link onClick={closeHandler} className='mobile-nav-link' activeClass="nav-active" spy={true} to="portfolio" smooth={'easeInOutQuart'} offset={-100} duration={500} >PORTFOLIO</Link>
         </div>
 
+        
+
         <Link className='nav-link' activeClass="nav-active" spy={true} to="home" smooth={'easeInOutQuart'} offset={-101} duration={500} >HOME</Link>
         <Link className='nav-link' activeClass="nav-active" spy={true} to="about" smooth={'easeInOutQuart'} offset={-100} duration={500} >ABOUT</Link>
         <Link className='nav-link' activeClass="nav-active" spy={true} to="skills" smooth={'easeInOutQuart'} offset={-100} duration={500} >SKILLS</Link>
         <Link className='nav-link' activeClass="nav-active" spy={true} to="portfolio" smooth={'easeInOutQuart'} offset={-100} duration={500} >PORTFOLIO</Link>
+        
       </div>
     </div>
   )

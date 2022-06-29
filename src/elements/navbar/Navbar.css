@@ -17,8 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    margin-top: 0px;
 }
 
 .nav-link{
@@ -124,6 +122,10 @@
     font-size: 20px;
 }
 
+.mobile-logo{
+    display: none;
+}
+
 @media screen and (max-width: 772px) {
     .nav-link{
         display: none;
@@ -131,6 +133,8 @@
 
     .links-container{
         justify-content: flex-end;
+        position: fixed;
+        margin-top: 0px;
     }
 
     .hamburger-container{
@@ -143,5 +147,17 @@
 
     .nav-wrapper{
         border-bottom: 1px solid rgba(0, 0, 0);
+        justify-content: space-between;
+    }
+
+    .mobile-logo{
+        display: block;
+        margin-left: 25px;
+        font-size: 36px;
+        font-weight: 600;
+
+        text-shadow: 0 2px 1px #000, 
+            -1px 2px 1px #eee, 
+            -2px 4px 1px #999;
     }
 }
