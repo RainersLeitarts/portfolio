@@ -90,3 +90,17 @@
     }
 
 }
+
+@media screen and (max-height: 500px) {
+    .home-wrapper{
+        height: auto;
+    }
+
+    .left-col{
+        height: auto;
+    }
+
+    .right-col{
+        height: auto;
+    }
+}

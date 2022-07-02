@@ -233,3 +233,14 @@
         }
     }
 }
+
+
+@media screen and (max-height: 500px) {
+    .about-wrapper{
+        height: auto;
+    }
+
+    .about-col1{
+        height: auto;
+    }
+}

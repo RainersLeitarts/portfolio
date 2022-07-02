@@ -135,3 +135,17 @@
         width: 100%;
     }
 }
+
+@media screen and (max-height: 500px) {
+    .skills-wrapper{
+        height: auto;
+    }
+
+    .skills-col1{
+        height: auto;
+    }
+
+    .skills-col2{
+        height: auto;
+    }
+}
