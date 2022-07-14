@@ -10,7 +10,7 @@ const SkillItem = ({ setImg, active, setActiveSkill, skillName, icon, children }
 
     return (
         <div onClick={onClickHandler} className={`skill-item ${active === skillName && 'active'}`}>
-            <img className='skill-icon' src={icon} />
+            <img alt='' className='skill-icon' src={icon} />
             <p className='skill-text'>{children}</p>
         </div>
     )

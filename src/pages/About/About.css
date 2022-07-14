@@ -60,6 +60,7 @@
     border-radius: 3px;
     background-color: black;
     transition: all 0.2s ease-out;
+    pointer-events: none;
     z-index: -1;
 }
 
