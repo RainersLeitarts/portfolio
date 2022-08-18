@@ -8,6 +8,9 @@ import mongodb_icon from '../../Images/mongodb.png'
 import firebase_icon from '../../Images/firebase.png'
 import html5_icon from '../../Images/html5.png'
 import css3_icon from '../../Images/css3.png'
+import nextjs_icon from '../../Images/nextjs.png'
+import apollo_icon from '../../Images/apollo.png'
+import graphql_icon from '../../Images/graphql.png'
 import xd_icon from '../../Images/xd.png'
 import './Skills.css'
 
@@ -26,10 +29,10 @@ const Skills = () => {
                         <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='nodejs' icon={nodejs_icon}>NodeJS</SkillItem>
                         <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='expressjs' icon={expressjs_icon}>ExpressJS</SkillItem>
                         <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='mongodb' icon={mongodb_icon}>MongoDB</SkillItem>
-                        <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='html5' icon={html5_icon}>HTML5</SkillItem>
-                        <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='css3' icon={css3_icon}>CSS3</SkillItem>
+                        <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='css3' icon={nextjs_icon}>NextJS</SkillItem>
+                        <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='html5' icon={graphql_icon}>GraphQL</SkillItem>
                         <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='firebase' icon={firebase_icon}>Firebase</SkillItem>
-                        <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='xd' icon={xd_icon}>Adobe XD</SkillItem>
+                        <SkillItem setImg={setSelectedImg} setActiveSkill={setActiveSkill} active={activeSkill} skillName='xd' icon={apollo_icon}>Apollo</SkillItem>
                     </div>
                 </div>
             </div>

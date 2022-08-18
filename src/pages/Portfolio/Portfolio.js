@@ -16,8 +16,8 @@ const Portfolio = () => {
         <h1 className='portfolio-header'>My projects:</h1>
         <div className='portfolio-content'>
           <ProjectCard demo={projects.projects[0].demo} github={projects.projects[0].github} img={wallofthoughtsImg} title={projects.projects[0].title} description={projects.projects[0].description} />
-          <ProjectCard demo={projects.projects[1].demo} github={projects.projects[1].github} img={wallofthoughtsImg} title={projects.projects[1].title} description={projects.projects[1].description} />
-          <ProjectCard demo={projects.projects[2].demo} github={projects.projects[2].github} img={wallofthoughtsImg} title={projects.projects[2].title} description={projects.projects[2].description} />
+          <ProjectCard demo={projects.projects[1].demo} github={projects.projects[1].github} img={cookbookImg} title={projects.projects[1].title} description={projects.projects[1].description} />
+          <ProjectCard demo={projects.projects[2].demo} github={projects.projects[2].github} img={carrentImg} title={projects.projects[2].title} description={projects.projects[2].description} />
         </div>
 
         <ProjectCardAlt demo={projects.projects[0].demo} github={projects.projects[0].github} img={wallofthoughtsImg} title={projects.projects[0].title} description={projects.projects[0].description} />
