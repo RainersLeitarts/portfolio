@@ -11,7 +11,7 @@ const About = () => {
             <div className='about-col1'>
                 <div className='about-content-wrapper'>
                     <h1 className='about-title'>About Me:</h1>
-                    <p className='about-text'>I am Rainers Leitarts, a 19-year-old Full-stack web developer based in Latvia. 
+                    <p className='about-text'>I am Rainers Leitarts, a 20-year-old Full-stack web developer based in Latvia. 
                     I like looking for new problems and solving them. That is my passion. That is why coding has always been fascinating to me. 
                     And since I have a strong creative side, I figured Web-development suits me. So I began my Web development journey. 
                     I picked up some Web development tools and I certainly do have
