@@ -3,36 +3,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .portfolio-content-wrapper{
     width: 100%;
     height: 100%;
     display: flex;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .portfolio-content{
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portfolio-header{
     font-size: 54px;
 }
-
 @media screen and (max-width: 1400px) {
     .portfolio-wrapper{
         padding: 0 50px;
     }
 
+}
+
+@media screen and (min-width: 850px) {
+    .portfolio-content{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {

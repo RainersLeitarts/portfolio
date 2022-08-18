@@ -1,0 +1,92 @@
+.card-container{
+    max-width: 800px;
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.card-container:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card-container.reverse{
+    flex-direction: row-reverse;
+}
+
+.card-image{
+    aspect-ratio: 16/9;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 0px 1px;
+    position: relative;
+}
+
+
+.alt-card-content-container{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.alt-card-title{
+    text-align: center;
+    margin: 0;
+    margin: 5px 0 20px 0;
+    font-size: 22px;
+}
+
+.alt-card-text{
+    text-align: justify;
+    margin: 0 40px;
+}
+
+.card-image-overlay{
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-image:hover .card-image-overlay{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card-image-overlay-button{
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.card-image-overlay-button:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 850px) {
+    .card-container{
+        display: none;
+    }
+}

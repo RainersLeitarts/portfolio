@@ -1,6 +1,5 @@
 import React from 'react'
 import './ProjectCard.css'
-import cookbookImg from '../../Images/cookbook.png'
 
 const ProjectCard = ({ demo, github, img, title, description }) => {
   return (

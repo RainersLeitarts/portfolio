@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "title": "Wallofthoughts.com",
+            "description": "The name is pretty self-explanitory, whatever's in your head goes on the wall. This was a project I built with a goal to sharpen my GraphQL skills. It is built with React, NextJS, MongoDB, GraphQL [Apollo Server / Client]",
+            "demo" : "https://wallofthoughts.com/",
+            "github" : "https://github.com/RainersLeitarts/thoughts-app"
+        },
+        {
             "title": "Recipes sharing platform with authentication",
             "description": "Made using ReactJS for the front-end and Firebase for the data storage. This project includes full CRUD functionality using the REST API provided by firebase. It is using Google for authentication.",
             "demo" : "https://cookbook-agile-rewidle.herokuapp.com/",
