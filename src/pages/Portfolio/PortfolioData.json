@@ -17,6 +17,12 @@
             "description": "Made with he MERN stack. Features an admin and a customer roles. Administrators can add cars and manage reservations, which users can simply make. The app is not yet completely done, more features incoming!",
             "demo" : "https://carrentmern.netlify.app/",
             "github" : "https://github.com/RainersLeitarts/car-rental-mern"
+        },
+        {
+            "title": "Mock business website",
+            "description": "Simple, yet clean mock business website built with React and NextJS.",
+            "demo" : "https://biz-webp.netlify.app",
+            "github" : "https://github.com/RainersLeitarts/mock-business-website"
         }
     ]
 }
